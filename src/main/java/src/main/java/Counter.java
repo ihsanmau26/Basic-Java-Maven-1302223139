@@ -9,7 +9,7 @@ public class Counter {
 	}
 		
 	public void reset() {
-		count = 0;
+		count = 1;
 	}
 	
 	public void increment() {
@@ -21,7 +21,18 @@ public class Counter {
 	}
 	
 	public int getCount() {
-		return count;
+            return count;
 	}
-	
+        
+        public void increasedBy(int by) {
+            count += by;
+        }
+
+        public void decreasedBy(int by) {
+            count -= by;
+        }
+
+        public void multiplyBy(int by) {
+            count *= by;
+        }
 }
